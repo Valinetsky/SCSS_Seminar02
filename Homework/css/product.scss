@@ -1,0 +1,83 @@
+@import "reset";
+@import "vars";
+
+@import "base";
+
+@import "nav";
+
+@import "arrival";
+
+.product {
+    &__top {
+        background-color: #f7f7f7;
+    }
+    &__slider {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 11px;
+        padding-bottom: 42px;
+    }
+    &__info {
+        background: #ffffff;
+        border: 1px solid #eaeaea;
+        padding: 65px 292px;
+        text-align: center;
+        margin-top: -65px;
+        z-index: 150;
+    }
+    &__header {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: #4d4d4d;
+        margin-bottom: 48px;
+    }
+    &__subheader {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: $accentColor;
+        position: relative;
+        margin-bottom: 27px;
+        &:after {
+            content: "";
+            width: 63px;
+            height: 3px;
+            background: $accentColor;
+            position: absolute;
+            left: 50%;
+            bottom: -12px;
+            transform: translateX(-50%);
+        }
+    }
+    &__text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #5e5e5e;
+        margin-bottom: 32px;
+    }
+    &__price {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        color: $accentColor;
+    }
+}
+
+.slider {
+    &__arrow {
+        padding: 12px 17px;
+        background-color: #2a2a2a26;
+        &:hover path {
+            fill: #f16d7f;
+        }
+    }
+}
+
+@import "secGoods";
+
+@import "secSubscribe";
+
+@import "footer";
