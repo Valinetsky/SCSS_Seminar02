@@ -381,8 +381,8 @@ details[open] .details__box {
 
 .icon {
   display: inline-block;
-  -webkit-mask-image: url(../img/nav_right_icon03.svg);
-  mask-image: url(../img/nav_right_icon03.svg);
+  -webkit-mask-image: url(../img/icons/Cart_icon.svg);
+  mask-image: url(../img/icons/Cart_icon.svg);
   -webkit-mask-size: contain;
   mask-size: contain;
   -webkit-mask-repeat: no-repeat;

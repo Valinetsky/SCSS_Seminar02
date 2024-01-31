@@ -21,6 +21,9 @@
         font-weight: 400;
         font-size: 14px;
         line-height: 17px;
+        & span {
+            color: $accentColor;
+        }
     }
     &__menu {
         display: grid;

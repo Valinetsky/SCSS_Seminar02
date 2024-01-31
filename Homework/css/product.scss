@@ -7,6 +7,8 @@
 
 @import "arrival";
 
+@import "iconColored";
+
 .product {
     &__top {
         background-color: #f7f7f7;
@@ -17,6 +19,7 @@
         align-items: center;
         padding-top: 11px;
         padding-bottom: 42px;
+        position: relative;
     }
     &__info {
         background: #ffffff;
@@ -24,6 +27,9 @@
         padding: 65px 292px;
         text-align: center;
         margin-top: -65px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
         z-index: 150;
     }
     &__header {
@@ -63,13 +69,33 @@
         font-size: 24px;
         line-height: 29px;
         color: $accentColor;
+        padding-bottom: 65px;
+        border-bottom: 1px solid #eaeaea;
     }
+    &__button {
+        display: flex;
+        align-items: center;
+        padding: 15px 57px 9px 24px;
+        gap: 23px;
+        border: 1px solid $accentColor;
+        margin: 0 auto;
+        color: $accentColor;
+    }
+}
+
+@import "choice";
+
+.choice {
+    gap: 23px;
+    justify-content: center;
+    margin-top: 65px;
+    margin-bottom: 48px;
 }
 
 .slider {
     &__arrow {
         padding: 12px 17px;
-        background-color: #2a2a2a26;
+        background-color: rgba(42, 42, 42, 0.15);
         &:hover path {
             fill: #f16d7f;
         }
@@ -77,6 +103,16 @@
 }
 
 @import "secGoods";
+
+.goods {
+    margin-top: 664px;
+    margin-bottom: 128px;
+}
+
+.icon {
+    background-color: $accentColor;
+    margin: 0;
+}
 
 @import "secSubscribe";
 
