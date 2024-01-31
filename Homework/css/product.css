@@ -159,6 +159,7 @@ details[open] .details__box {
   padding: 32px 74px 32px 33px;
   top: 75px;
   right: 0;
+  z-index: 1000;
 }
 
 .topmenu {
